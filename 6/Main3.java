@@ -1,3 +1,4 @@
+// начало строк
 import java.util.*;
 
 public class Main3 {
@@ -15,7 +16,7 @@ public class Main3 {
     public static void smertb (String [] a) {
         boolean ans = false;
         for (int i = 0; i<a.length ; i++) {
-            for (int j =i+1; j<a.length; j++) {
+            for (int j =0; j<a.length; j++) {
 
                 char [] char1 = a[i].toCharArray();
                 char [] char2 = a[j].toCharArray();

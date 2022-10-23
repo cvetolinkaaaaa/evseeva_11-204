@@ -12,7 +12,7 @@ public class Main2 {
             b[i] = scanner.nextInt();
         }
         sort(b);
-        int numb = -1;
+        int numb = -1002;
         for (int i = 0; i < a ; i++) {
             if(b[i] != numb){
                 int count = 0;

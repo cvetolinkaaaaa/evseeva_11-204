@@ -32,7 +32,7 @@ public class Main1 {
     public static double sort1(int[] arr) {
         double swaps2 = 0;
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i+1; j < arr.length; j++) {
+            for (int j = i; j < arr.length; j++) {
                 if(arr[i] > arr[j]){
                     int currEl = arr[i];
                     arr[i] = arr[j];

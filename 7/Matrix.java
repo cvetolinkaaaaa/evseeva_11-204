@@ -27,7 +27,7 @@ public class Matrix {
     public int opredelitel() {
         int opredelitel1 = 0;
         if (innerMatrix.length != 3) {
-            throw new RuntimeException("Все говно");
+            throw new RuntimeException("Чтобы посчитать определитель, введите матрицу размерностью 3");
         } else {
             opredelitel1 = innerMatrix[0][0]*innerMatrix[1][1]*innerMatrix[2][2]+innerMatrix[0][1]*innerMatrix[1][2]*innerMatrix[2][0]+innerMatrix[1][0]*innerMatrix[2][1]*innerMatrix[0][2]-innerMatrix[0][2]*innerMatrix[1][1]*innerMatrix[2][0]-innerMatrix[2][1]*innerMatrix[1][2]*innerMatrix[0][0]-innerMatrix[1][0]*innerMatrix[0][1]*innerMatrix[2][2];
         }

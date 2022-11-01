@@ -14,11 +14,10 @@ public class Person {
         double aaa = (110 - strength * 10)/100;
         double probability = Math.random();
         if (probability <= aaa) {
-            hit1 = strength ;
+            person.hp = person.hp - strength;
         } else {
-            hit1 = 0 ;
+            person.hp = person.hp - strength;
         }
-        person.hp = person.hp - hit1;
-        System.out.println(person.name + " " + " " + person.hp);
     }
 }
+

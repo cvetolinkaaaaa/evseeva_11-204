@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<label for="name">Имя</label>
+<input type="text" id="name">
+<label for="surname">Фамилия</label>
+<input type="text" id="surname">
+<button type="button" onclick="work()">Добавить</button>
+
+<table cellspacing="5" cellpadding="10" border="2" id="z">
+  <tr>
+    <td>Имя</td>
+    <td>Фамилия</td>
+  </tr>
+</table>
+
+
+<!--<form>-->
+<!--  <legend>Заказ</legend>-->
+<!--  <div>-->
+<!--    <label for="name">Наименование</label>-->
+<!--    <input type="text" id="name">-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <label for="cost">Стоимость</label>-->
+<!--    <input type="number" id="cost">-->
+<!--  </div>-->
+<!--  <button type="button" onclick="work()">Добавить</button>-->
+<!--</form>-->
+<!--<table id="z">-->
+<!--  <caption>Ваш заказ</caption>-->
+<!--</table>-->
+
+</body>
+<script type="text/javascript">
+  function work() {
+    var Name;
+    var Surname;
+    var row;
+    var td1;
+    var td2;
+    Name = document.getElementById("name");
+    Surname = document.getElementById("surname");
+    row = document.createElement("TR");
+    td1 = document.createElement("TD");
+    td2 = document.createElement("TD");
+    td1.textContent = Name.value;
+    td2.textContent = Surname.value;
+    row.append(td1, td2);
+    document.getElementById("z").appendChild(row);
+  }
+</script>
+
+</html>

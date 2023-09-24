@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function palindrome() {
+        var word = document.getElementById('word').value;
+        var result = word.split('').reverse().join('') == word;
+        if (result){
+            output = "- это палиндром";
+        } else {
+            output = "- это не палиндром";
+        }
+        document.getElementById('message').innerHTML = document.getElementById('message').innerHTML+'<br />'+ word +output;
+        return result;
+    }
+
+
+  // function palindrome(){
+  //   var word = document.getElementById('word').value;
+  //   var ccount = 0;
+  //   if(word==="") {
+  //     output = "Введите слово";
+  //     document.getElementById('message').innerHTML = output;
+  //     return false;
+  //   }
+  //   if ((word.length) % 2 === 0) {
+  //     ccount = (word.length) / 2;
+  //   } else {
+  //     if (word.length === 1) {
+  //         output =" - палиндром.";
+  //         document.getElementById('message').innerHTML = document.getElementById('message').innerHTML+'<br />'+ word +output;
+  //         return true;
+  //     } else {
+  //       ccount = (word.length - 1) / 2;
+  //     }
+  //   }
+  //   for (var x = 0; x < ccount; x++) {
+  //     if (word[x] != word.slice(-1-x)[0]) {
+  //       output = " - не палиндром.";
+  //       document.getElementById('message').innerHTML = document.getElementById('message').innerHTML+'<br />'+ word +output;
+  //       return false;
+  //     }
+  //   }
+  //   output =" - палиндром.";
+  //   document.getElementById('message').innerHTML = document.getElementById('message').innerHTML+'<br />'+ word +output;
+  //   return true;
+  // }
+</script>
+<body>
+<p id="message" >Пожалуйста, введите слово</p>
+Слово: <input id="word" name="word" type="text" size="20" /><br />
+<input name="button" type="submit" value="Проверить" onClick="palindrome();" />
+
+</body>
+</html>

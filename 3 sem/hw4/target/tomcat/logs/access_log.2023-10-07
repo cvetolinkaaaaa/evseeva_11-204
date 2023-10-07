@@ -1,0 +1,7 @@
+127.0.0.1 - - [07/Oct/2023:14:16:43 +0300] "POST /servlets/sum HTTP/1.1" 200 2 http-bio-8080-exec-1 38
+0:0:0:0:0:0:0:1 - - [07/Oct/2023:20:06:44 +0300] "GET /untitled HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [07/Oct/2023:20:06:44 +0300] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [07/Oct/2023:20:06:55 +0300] "GET /untitled/name HTTP/1.1" 404 - http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [07/Oct/2023:20:27:13 +0300] "GET /servlets HTTP/1.1" 302 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [07/Oct/2023:20:27:14 +0300] "GET /servlets/ HTTP/1.1" 200 52 http-bio-8080-exec-8 838
+0:0:0:0:0:0:0:1 - - [07/Oct/2023:20:27:20 +0300] "GET /servlets/name HTTP/1.1" 404 977 http-bio-8080-exec-9 3
